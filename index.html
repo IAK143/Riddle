@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Checker</title>
+    <script>
+        function checkInput() {
+            var userInput = document.getElementById("numberInput").value;
+            if (userInput == 128) {
+                window.location.href = "https://www.example.com"; // Replace with your desired URL
+            } else {
+                document.getElementById("message").innerText = "Sorry my friend, but you are just a dumb fellow (Wrong num)";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Enter a Number</h1>
+    <input type="number" id="numberInput">
+    <button onclick="checkInput()">Submit</button>
+    <p id="message"></p>
+</body>
+</html>
